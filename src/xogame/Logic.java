@@ -26,14 +26,14 @@ public class Logic {
         if (checkWinLines(DOT_X)) {
             System.out.println("Игрок ПОБЕДИЛ!!!");
             winnerName ="Игрок ПОБЕДИЛ!!!";
-            new Winne(winnerName);
+            new Winner(winnerName);
             return;
         }
 
         if (isFull()) {
             System.out.println("Ничья!");
             winnerName ="Ничья!";
-            new Winne(winnerName);
+            new Winner(winnerName);
             return;
         }
 
@@ -43,14 +43,14 @@ public class Logic {
         if (checkWinLines(DOT_O)) {
             System.out.println("Искуственный интеллект ПОБЕДИЛ!!!");
             winnerName ="Искуственный интеллект ПОБЕДИЛ!!!";
-            new Winne(winnerName);
+            new Winner(winnerName);
             return;
         }
 
         if (isFull()) {
             System.out.println("Ничья!");
             winnerName ="Ничья!";
-            new Winne(winnerName);
+            new Winner(winnerName);
             return;
         }
         gameFinish = false;
